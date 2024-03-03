@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'exo 2', sans-serif;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(45deg, #2ecc71, #16a085);
+}
+ /*#backvideo
+{position:absolute;
+right:0;
+bottom:0;
+min-width: 100%;
+min-height: 100%;
+background-size:cover;
+overflow: hidden;}*/
+.mainclock{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+	overflow:hidden;
+   
+    /*to make the height and width responsive*/
+    
+    background: url(./image/clock.png) no-repeat;
+    
+    background-size: 100%;
+    background-position: center;
+    background-size:contain ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock{
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	
+	overflow:hidden;
+   
+    /*to make the height and width responsive*/
+    
+   
+    
+    background-size: 100%;
+    background-position: center;
+    background-size:contain ;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.num{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 18px;
+}
+
+.num:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 5px;
+	height: 15px;
+	background-color: black;
+}
+
+
+.num3{
+	transform: rotate(90deg);
+}
+.num3 div{
+	transform: rotate(-90deg);
+}
+
+
+.num6{
+	transform: rotate(180deg);
+}
+.num6 div{
+	transform: rotate(-180deg);
+}
+
+
+.num9{
+   
+	transform: rotate(270deg);
+}
+.num9 div{
+    
+	transform: rotate(-270deg);
+}
+.left9 div{
+   
+}
+
+a:link {
+    text-decoration: none;
+    color:#BDD2A6
+    }
+    
+a:visited {
+text-decoration: none;
+color: #BDD2A6
+}
+
+a:hover {
+text-decoration: none;
+color: #C5E6A6;
+}
+
+a:active {
+text-decoration: none;
+color:#4B3B40;
+
+}
+.hand{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hand div{
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+
+.second{
+	width: 1px;
+	height: 40%;
+    opacity: 0.8;
+    background: #BDD2A6;
+}
+
+.minute{
+	height: 38%;
+	width: 4px;
+	border-radius: 2px;
+    opacity: 0.8;
+    background: #F7934C;
+}
+
+.hour{
+	height: 28%;
+	width: 8px;
+    opacity: 0.8;
+	border-radius: 4px;
+    background: #4B3B40;
+}
