@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Wireframe</title>
+  <title>Get Personal</title>
 
 
   <!-- Favicons -->
@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="main.css" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet">
 
 
 </head>
@@ -49,74 +50,49 @@
           <li><a href="Resume.html" >Resume</a></li>
           <li><a href="moreinfo.html">Get Personal</a></li>
           
-          <li class="dropdown"><a href="#"class="active"><span>Designs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Designs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="web-design.html">Web Design</a></li>
 			  <li><a href="videos.html">Videos</a></li>
 			  <li><a href="photos.html">Photos</a></li>
-        <li><a href="wireframe.html"class="active">WireFrame</a></li>
+        <li><a href="wireframe.html">WireFrame</a></li>
              
             </ul>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
       </nav>
 
     </div>
   </header>
-
-  <main id="main">
+ <main>
     <svg width="328" height="2107" viewBox="0 0 328 2107" fill="none" preserveAspectRatio="xMidYMax meet" >
-      <path  d="M289.5 0V915.5C289.5 1069.5 143 1063.5 143 915.5C143 882.544 141.667 840.5 143 775.5C143 612 5 614 5 781V2106.5M143 775.5C141.667 840.5 143 882.544 143 915.5C143 1063.5 289.5 1069.5 289.5 915.5M5 781V2106.5" stroke="#C5E6A6" stroke-width="20"/>
-      <path  d="M305.5 0.5V916C305.5 1070 159 1064 159 916C159 883.044 157.667 841 159 776C159 612.5 21 614.5 21 781.5V2107M159 776C157.667 841 159 883.044 159 916C159 1064 305.5 1070 305.5 916M21 781.5V2107" stroke="#F7934C" stroke-width="20"/>
-      <path  d="M322.5 0.5V916C322.5 1070 176 1064 176 916C176 883.044 174.667 841 176 776C176 612.5 38 614.5 38 781.5V2107M176 776C174.667 841 176 883.044 176 916C176 1064 322.5 1070 322.5 916M38 781.5V2107" stroke="#4B3B40" stroke-width="20"/>
-      </svg>
-        
-
-    
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/tulips.png');">
-      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-
-        <h2>WireFrame</h2>
-        
-
-      </div>
-    </div>
-
-    
-    <section id="about" class="about">
-      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade up">
-        <div class="row position-relative">
-          <div class="col-lg-12 about-img" style="background-image: url(image/wireframe.PNG);" data-aos="fade up"></div>
-          <div class="col-lg-12 about-img" style="background-image: url(image/tree.PNG);" data-aos="fade up"></div>
-		
-			
-        <div class="row position-relative">
-			
+        <path  d="M289.5 0V915.5C289.5 1069.5 143 1063.5 143 915.5C143 882.544 141.667 840.5 143 775.5C143 612 5 614 5 781V2106.5M143 775.5C141.667 840.5 143 882.544 143 915.5C143 1063.5 289.5 1069.5 289.5 915.5M5 781V2106.5" stroke="#C5E6A6" stroke-width="20"/>
+        <path  d="M305.5 0.5V916C305.5 1070 159 1064 159 916C159 883.044 157.667 841 159 776C159 612.5 21 614.5 21 781.5V2107M159 776C157.667 841 159 883.044 159 916C159 1064 305.5 1070 305.5 916M21 781.5V2107" stroke="#F7934C" stroke-width="20"/>
+        <path  d="M322.5 0.5V916C322.5 1070 176 1064 176 916C176 883.044 174.667 841 176 776C176 612.5 38 614.5 38 781.5V2107M176 776C174.667 841 176 883.044 176 916C176 1064 322.5 1070 322.5 916M38 781.5V2107" stroke="#4B3B40" stroke-width="20"/>
+        </svg>
           
-
-          <div class="col-lg-12">
-            
-            <div class="our-story">
-              
-              
-              <p>Making the Wireframe for the Xdigitaal website helped by mapping out the placement of key elements such as navigation menus, content areas, and interactive features, to provide a clear roadmap for the development team, fostering efficient collaboration and reducing the risk of misunderstandings.
-                 In essence, the wireframes above were an invaluable tool that ensured that the product website met both functional and user experience requirements effectively. </p>
-              
-              
-
+        <div class="info d-flex align-items-center">
+            <div class="container" data-aos="fade-up">
+            <h1 class="title">Contact Me</h1>
+            <p class="para">Feel free to contact me and I will get back to you as soon as possible.</p>
+            <form action="mail.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject">
+                <label for="message">Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send">
+            </form>
             </div>
-          </div>
-
         </div>
-
-      </div>
-    </section>
-   
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+   <footer id="footer" class="footer">
 
     <div class="footer-content position-relative">
       <div class="container">
@@ -144,7 +120,7 @@
               <li><a href="Resume.html">Resume</a></li>
               <li><a href="moreinfo.html">Get Personal</a></li>
               <li><a href="contact.html">Contact</a></li>
-          
+              
               
             </ul>
           </div>
@@ -158,9 +134,7 @@
               <li><a href="wireframe.html">WireFrame</a></li>
               
             </ul>
-            
           </div>
-
 
         </div>
       </div>
